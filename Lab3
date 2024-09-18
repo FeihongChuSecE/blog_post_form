@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>blog_post_form</title>
+    <style>
+        body {
+            font-family: Arial;
+            width: 300px;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(79, 12, 92);
+            text-align: leftr;
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        label {
+            font-weight: bolder;
+            color: rgb(196, 135, 237);
+            padding-right: 10px;
+        }
+
+        input {
+            font-family: Lucida Sans;
+        }
+
+        select {
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: rgb(232, 228, 142);
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 100px;
+            box-shadow: 5px 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="www.google.com">
+        <label for="title">Post Title</label>
+        <input type="text" name="Post Title" placeholder="Enter your Post Title"><br><br>
+
+        <label for="author">Author's Name</label>
+        <input type="text" name="Author's Name" placeholder="Enter your Author's Name"><br><br>
+
+        <label for="content">Post Content</label>
+        <textarea type="content" rows="5" cols="50" placeholder="Enter your Post Content here"></textarea><br><br>
+
+        <label for="category">Post Category</label>
+        <select name="category" id="category select" placeholder="select your post category here">
+            <option value="">Select your Post Category here</option>
+            <optgroup>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+                <option value="travel">Travel</option>
+                <option value="entertainment">Entertainment</option>
+            </optgroup>
+
+        </select><br><br>
+
+        <button type="submit" onclick="alert('Form submitted!')">Submit</button>
+    </form>
+
+</body>
